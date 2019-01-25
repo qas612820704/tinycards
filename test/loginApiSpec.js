@@ -1,7 +1,10 @@
 import nock from 'nock';
-import { expect } from 'chai';
+import { expect, use } from 'chai';
 import setupLoginApiMock from './lib/setupLoginApiMock';
 import * as apis from '../src/apis';
+
+use(require('chai-as-promised'));
+
 
 require('dotenv').config();
 

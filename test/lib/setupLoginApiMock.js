@@ -1,8 +1,5 @@
-import { use } from 'chai';
 import nock from 'nock';
 import { eq } from 'lodash';
-
-use(require('chai-as-promised'));
 
 export const identifier = 'correct-identifier';
 export const password = 'correct-password';
