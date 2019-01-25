@@ -1,14 +1,14 @@
 {
   "name": "tinycards",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An unofficial Tinycards node API by Duolingo",
-  "homepage": "https://www.kriasoft.com/babel-starter-kit/",
+  "homepage": "https://github.com/babel-starter-kit/",
   "repository": "qas612820704/tinycards",
   "author": "Lego <qas612820704@gmail.com> (https://lego-is.me)",
   "license": "MIT",
-  "keywords": [],
+  "keywords": ["tinycards"],
   "main": "index.js",
-  "jsnext:main": "index.es.js",
+  "module": "index.es.js",
   "babel": {
     "presets": [
       "@babel/preset-env"
@@ -63,7 +63,7 @@
     "test:cover": "nyc npm test",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "build": "node tools/build",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
     "start": "easystatic start docs"
   }
